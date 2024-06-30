@@ -1,3 +1,13 @@
+:root {
+    --color-primary: #191b77;
+    --color-secondary: #696cff;
+    --color-light-gray: #9abada79;
+    --color-dark-gray: #566a7f;
+    --color-notification-success: #4CAF50;
+    --color-notification-warning: #FFC107;
+    --color-notification-danger: #FF3E1D;
+}
+
 body {
     display: flex;
     font-family: 'Montserrat', sans-serif;
@@ -8,7 +18,7 @@ body {
 }
 
 .card {
-    background-color: #9abada79; 
+    background-color: var(--color-light-gray); 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -35,7 +45,7 @@ form {
     letter-spacing: inherit;
     margin-bottom: 0.5rem;
     font-weight: 500;
-    color: #566a7f;
+    color: var(--color-dark-gray);
 }
 
 .form-control {
@@ -44,7 +54,7 @@ form {
     font-size: 0.9375rem;
     font-weight: 400;
     line-height: 1.53;
-    color: #afb9c4;
+    color: #697a8d;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #d9dee3;
@@ -73,8 +83,8 @@ button {
     font-size: 0.9375rem;
     border-radius: 0.375rem;
     color: #fff;
-    background-color: #191b77;
-    border-color: #696cff;
+    background-color: var(--color-primary);
+    border-color: var(--color-secondary);
     box-shadow: 0 0.125rem 0.25rem 0 rgba(105, 108, 255, 0.4);
 }
 
@@ -100,17 +110,17 @@ button {
 }
 
 .notification.success {
-    background-color: #4CAF50;
+    background-color: var(--color-notification-success);
     color: white;
 }
 
 .notification.warning {
-    background-color: #FFC107;
+    background-color: var(--color-notification-warning);
     color: white;
 }
 
 .notification.danger {
-    background-color: #FF3E1D;
+    background-color: var(--color-notification-danger);
     color: white;
 }
 

@@ -1,4 +1,4 @@
-document.getElementById('user-form').addEventListener('submit', function(event) {
+document.getElementById('user-form').addEventListener('submit', async function(event) {
     event.preventDefault();
 
     const name = document.getElementById('name').value;
@@ -15,22 +15,19 @@ document.getElementById('user-form').addEventListener('submit', function(event) 
         return;
     }
 
-    if (name && email) {
-        fetch('/submit', {
+    try {
+        const response = await fetch('/submit', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({ name, email }),
-        })
-        .then(response => response.json())
-        .then(data => {
-            showNotification(data.message, 'success');
-        })
-        .catch((error) => {
-            console.error('Error:', error);
         });
-    } else {
+
+        const data = await response.json();
+        showNotification(data.message, 'success');
+    } catch (error) {
+        console.error('Error', error);
         showNotification('Please fill in all fields.', 'danger');
     }
 });
