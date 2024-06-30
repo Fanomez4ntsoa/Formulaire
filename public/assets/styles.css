@@ -8,7 +8,7 @@ body {
 }
 
 .card {
-    background-color: #f8f9fa; /* Gris clair */
+    background-color: #9abada79; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -44,7 +44,7 @@ form {
     font-size: 0.9375rem;
     font-weight: 400;
     line-height: 1.53;
-    color: #697a8d;
+    color: #afb9c4;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #d9dee3;
@@ -73,7 +73,7 @@ button {
     font-size: 0.9375rem;
     border-radius: 0.375rem;
     color: #fff;
-    background-color: #696cff;
+    background-color: #191b77;
     border-color: #696cff;
     box-shadow: 0 0.125rem 0.25rem 0 rgba(105, 108, 255, 0.4);
 }
