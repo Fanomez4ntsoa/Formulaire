@@ -1,7 +1,7 @@
 ## Installation
 1. Clone the repository 
-- git clone
-- cd Formulaire
+- git clone https://github.com/Fanomez4ntsoa/Formulaire.git
+- cd Formulaire/
 
 2. Install dependencies
 - npm install
